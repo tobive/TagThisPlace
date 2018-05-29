@@ -1,0 +1,36 @@
+{
+  "name": "tag-this-place",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
+    "jest-expo": "~27.0.0",
+    "react-native-scripts": "1.14.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^25.0.0",
+    "react": "16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react-native-material-bottom-navigation": "^0.9.0",
+    "react-native-storage": "^0.2.2",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.5.1",
+    "react-navigation-redux-helpers": "^1.1.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-async-initial-state": "^0.2.2",
+    "redux-promise": "^0.6.0"
+  }
+}
