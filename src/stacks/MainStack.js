@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabBarBottom, TabNavigator } from 'react-navigation';
+import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { NavigationComponent } from 'react-native-material-bottom-navigation';
 import MainHomeScreen from '../screens/MainHomeScreen';
@@ -42,32 +42,57 @@ const MainStack = TabNavigator(
                 return <Ionicons name={iconName} size={25} color={tintColor} />;
             }
         }),
+        // tabBarOptions: {
+        //     activeTintColor: 'tomato',
+        //     inactiveTintColor: 'grey',
+        //     // Options for react-native-material-bottom-navigation
+        //     bottomNavigationOptions: {
+        //         labelColor: 'white',
+        //         backgroundColor: 'red',
+        //         rippleColor: 'red',
+        //         // shifting: false,
+        //         tabs: {
+        //           Home: {
+        //             barBackgroundColor: 'white',
+        //             labelColor: 'blue',
+        //             iconColor: 'blue'
+        //           },
+        //           Map: {
+        //             barBackgroundColor: 'white',
+        //             labelColor: 'blue'
+        //           },
+        //           Settings: {
+        //             barBackgroundColor: 'white',
+        //             labelColor: 'blue'
+        //           }
+        //         }
+        //       }
+        // },
         tabBarOptions: {
             activeTintColor: 'tomato',
-            inactiveTintColor: 'grey',
-            // Options for react-native-material-bottom-navigation
+            inactiveTintColor: 'gray',
             bottomNavigationOptions: {
-                labelColor: 'white',
-                backgroundColor: 'red',
-                rippleColor: 'white',
-                // shifting: false,
-                tabs: {
-                  Home: {
-                    barBackgroundColor: 'white',
-                    labelColor: 'blue',
-                    iconColor: 'blue'
-                  },
-                  Map: {
-                    barBackgroundColor: 'white',
-                    labelColor: 'blue'
-                  },
-                  Settings: {
-                    barBackgroundColor: 'white',
-                    labelColor: 'blue'
-                  }
+              labelColor: 'white',
+              backgroundColor: 'red',
+              rippleColor: 'white',
+              // shifting: false,
+              tabs: {
+                Home: {
+                  barBackgroundColor: '#37474F',
+                  labelColor: 'white',
+                  iconColor: 'white'
+                },
+                Map: {
+                  barBackgroundColor: '#37474F',
+                  labelColor: 'white'
+                },
+                Settings: {
+                  barBackgroundColor: '#37474F',
+                  labelColor: 'white'
                 }
               }
-        },
+            }
+          },
         tabBarComponent: NavigationComponent,
         tabBarPosition: 'bottom',
         animationEnabled: false,

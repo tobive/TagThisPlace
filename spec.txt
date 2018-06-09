@@ -1,0 +1,13 @@
+Object for storage:
+* Tag
+	- key: 'tags'
+	- id: 'tag-'
+	- data: Object(map)
+	- name: ''
+	- group: Array(String)
+
+* Group
+	- key: 'groups'
+	- id: ''
+
+
